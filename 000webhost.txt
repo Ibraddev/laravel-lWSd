@@ -1,0 +1,6 @@
+Account : ibrahimdiabagate200@gmail.com
+Database 
+DB Name	: id17314777_db
+DB User	: id17314777_root	
+DB Host	: localhost	
+DB MDP  : ClZYB[931gSg0/?S

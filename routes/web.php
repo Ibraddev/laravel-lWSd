@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\MeController;
+use App\Http\Controllers\PortfolioController;
+use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +16,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/',[MeController::class,'index'])->name('index');
+Route::get('/project-details/{id}',[PortfolioController::class,'project_details'])->name('getproject');
+Route::post('/',[ContactController::class,'save_msg'])->name('send_msg');
+
+Route::get('/test',[MeController::class,'test'])->name('test');
